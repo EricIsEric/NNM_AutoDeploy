@@ -4,7 +4,7 @@ set nnmiftpserver=%1
 set db_type=%2
 set db_user=%3
 set db_user_loginpassword=z4qhGfyWsQc0fUVbHXgx3FELM4LpiMqa
-set File=%TEMP%\..\ovinstallparams.ini
+set File=%TEMP%\ovinstallparams.ini
 
 SET db_host=15.115.176.170
 SET db_instance=nmc
@@ -17,7 +17,7 @@ if exist %uninstaller% (
 	call %uninstaller% -i silent
 	if ERRORLEVEL 0 (
 		echo " NNMi is uninstalled successfully"
-		rd /s/q %TEMP%\..\
+		rd /s/q %TEMP%
 		rd /s/q %programdata%\HP\
 		rd /s/q %NNMi_HOME%
 	)else (
